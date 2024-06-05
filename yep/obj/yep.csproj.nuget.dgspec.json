@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\source\\repos\\k\\yep\\yep\\yep.csproj": {}
+    "C:\\Users\\opilane\\source\\repos\\0000000000000000000000000\\MHM-this-is-me-main\\yep\\yep.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\source\\repos\\k\\yep\\yep\\yep.csproj": {
+    "C:\\Users\\opilane\\source\\repos\\0000000000000000000000000\\MHM-this-is-me-main\\yep\\yep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\k\\yep\\yep\\yep.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\0000000000000000000000000\\MHM-this-is-me-main\\yep\\yep.csproj",
         "projectName": "yep",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\k\\yep\\yep\\yep.csproj",
+        "projectPath": "C:\\Users\\opilane\\source\\repos\\0000000000000000000000000\\MHM-this-is-me-main\\yep\\yep.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\k\\yep\\yep\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\source\\repos\\0000000000000000000000000\\MHM-this-is-me-main\\yep\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

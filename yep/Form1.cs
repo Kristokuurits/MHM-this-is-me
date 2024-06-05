@@ -20,7 +20,7 @@ namespace yep
             this.dbContext = new ProductsContext();
 
             // Uncomment the line below to start fresh with a new database.
-            // this.dbContext.Database.EnsureDeleted();
+            //this.dbContext.Database.EnsureDeleted();
             this.dbContext.Database.EnsureCreated();
 
             this.dbContext.Categories.Load();
@@ -34,6 +34,32 @@ namespace yep
 
             this.dbContext?.Dispose();
             this.dbContext = null;
+        }
+
+        private void dataGridViewCategories_SelectionChanged(object sender, EventArgs e)
+        {
+            if (this.dbContext != null)
+            {
+                var category = (Category)this.dataGridViewCategories.CurrentRow.DataBoundItem;
+
+                if (category != null)
+                {
+                    this.dbContext.Entry(category).Collection(e => e.Products).Load();
+                }
+            }
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            this.dbContext!.SaveChanges();
+
+            this.dataGridViewCategories.Refresh();
+            this.dataGridViewProducts.Refresh();
+        }
+
+        private void dataGridViewCategories_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
